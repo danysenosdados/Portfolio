@@ -1,6 +1,7 @@
-/* Estilo base, redefinição e estrutura geral */
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Reset de CSS para remover margens, paddings e definir um estilo base */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,43 +23,47 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-:root{
+/* Definições de variáveis para cores e estilos globais */
+:root {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    cursor:default;
+    cursor: default;
     --color-white: #fff;
     --color-black: #000;
-    --color-dark-mode:#11111b;
-    --color-light-mode:#ece7e1;
+    --color-dark-mode: #11111b;
+    --color-light-mode: #ece7e1;
     --color-ddd-color: #ddd;
     --color-gray: #c4c4c4;
     --color-purple: #8000ff;
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark:#e2e2e207;
-    --color-shadowDark:rgba(0, 0, 0, 0.137);
+    --color-navbarBorder-dark: #e2e2e207;
+    --color-shadowDark: rgba(0, 0, 0, 0.137);
     --static-heading-gradient-blue: #b0f3f1;
     --static-heading-gradient-pink: #ffcfdf;
-    --tech-stack-box-first-color:#1a1a29;
-    --tech-stack-box-second-color:rgba(27, 27, 40, 0);
+    --tech-stack-box-first-color: #1a1a29;
+    --tech-stack-box-second-color: rgba(27, 27, 40, 0);
     --tech-stack-box-border-color: #292929;
 }
-::-webkit-scrollbar{
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
     width: 5px;
 }
+
 ::-webkit-scrollbar-track {
     background: #0a0a10;
 }
-::-webkit-scrollbar-thumb{
-   background-color: #8000ff;
-   /* border-radius: 20px; */
 
+::-webkit-scrollbar-thumb {
+   background-color: #8000ff;
 }
 
+/* Comportamento suave de rolagem */
 html {
     scroll-behavior: smooth;
 }
 
-
+/* Estilo base para a estrutura do documento */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -74,11 +79,12 @@ body {
     background-size: cover;
 }
 
+/* Estilos para o cabeçalho */
 .cabecalho {
     display: flex;
     align-items: center;
     background: linear-gradient(#041833,#04244F,#154580);
-    justify-content: flex-start; /* Alinha itens à esquerda */
+    justify-content: flex-start;
     padding: 0 20px;
     background-color: #333;
     position: fixed;
@@ -87,7 +93,7 @@ body {
     z-index: 1000;
 }
 
-/*logo///////////////////////////////////////*/
+/* Estilos para o logotipo */
 .logo-container {
     position: relative;
     width: 100px;
@@ -98,33 +104,35 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.2s ease-in-out; /* Aumenta a velocidade da transição */
+    transition: opacity 0.2s ease-in-out;
 }
 
 .logo-hover {
-    opacity: 0; /* Oculta a segunda logo inicialmente */
-    top: 5px; /* Ajuste o valor conforme necessário para descer a imagem */
+    opacity: 0;
+    top: 5px;
 }
 
 .logo-container:hover .logo-principal {
-    opacity: 0; /* Faz a primeira logo desaparecer mais rápido */
+    opacity: 0;
 }
 
 .logo-container:hover .logo-hover {
-    opacity: 1; /* Faz a segunda logo aparecer mais rápido */
+    opacity: 1;
 }
 
+/* Estilo para imagens dentro do cabeçalho */
 .cabecalho img {
     margin-right: 30px;
     margin-left: 220px;
     padding: 0;
 }
 
+/* Estilo para o menu de navegação no cabeçalho */
 .cabecalho__menu {
     display: flex;
-    flex-direction: row; /* Mantém os itens em linha */
-    gap: 10px; /* Espaço entre os itens */
-    margin-right: auto; /* Empurra o menu para o lado esquerdo */
+    flex-direction: row;
+    gap: 10px;
+    margin-right: auto;
     margin-left: 250px;
     margin-top: 0;
 }
@@ -134,47 +142,47 @@ body {
     font-weight: 600;
     font-size: 24px;
     color: #22D4FD;
-    padding: 5px 10px; /* Ajustei o padding para dar mais espaço */
+    padding: 5px 10px;
     text-decoration: none;
     white-space: nowrap;
 }
 
-/* Ajuste a margem superior ao rolar para as seções */
+/* Ajuste de margem superior ao rolar para seções */
 #home {
-    scroll-margin-top: 110px; /* Ajuste esse valor conforme a altura do cabeçalho */
+    scroll-margin-top: 110px;
     padding-bottom: 55px;
 }
 
 #sobre-mim {
-    scroll-margin-top: 5px; /* Ajuste esse valor conforme a altura do cabeçalho */
+    scroll-margin-top: 5px;
 }
 
-/* Estilo para a seção geral */
+/* Estilo para a seção de apresentação */
 .apresentacao {
-    padding-left: 20%; /* Espaço à esquerda para mover o conteúdo para o centro */
-    margin-top: 150px; /* Espaço acima para iniciar a seção abaixo do cabeçalho */
+    padding-left: 20%;
+    margin-top: 150px;
 }
 
+/* Estilos para a estrutura em grid */
 .grid-container {
-    display: grid; /* Torna o contêiner um grid container */
-    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
-    gap: 50px; /* Espaço entre as colunas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
     padding-bottom: 30px;
 }
 
-/* Estilo para cada item no grid */
 .grid-item {
-    padding: 0; /* Espaço interno das divs */
+    padding: 0;
     padding-top: 150px;
-    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    max-width: 800px;
     position: relative;
 }
 
-/* Estilo específico para a seção Home /////////////////////////////////////////////////////////////////////////////////*/
+/* Estilo específico para a seção Home */
 .home .apresentacao__conteudo__titulo_home {
     font-size: 36px;
     font-family: "Krona One", sans-serif;
-    line-height: 1.4; /* Espaçamento entre linhas */
+    line-height: 1.4;
 }
 
 .home .titulo-destaque_home {
@@ -186,9 +194,9 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin-top: 20px; 
-    line-height: 1.1; /* Espaçamento entre linhas */
-    text-align: justify; /* Justifica o texto */
-    padding: 0; /* Remove o espaço interno das divs */
+    line-height: 1.1;
+    text-align: justify;
+    padding: 0;
 }
 
 .home .apresentacao__links_home {
@@ -205,62 +213,60 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
-    width: 90%; /* Ajusta a largura para ocupar 100% */
+    width: 90%;
     max-width: 378px;
     font-size: 24px;
     text-align: center;
     border-radius: 8px;
-    padding: 15.5px 1px; /* Espaço interno do link */
+    padding: 15.5px 1px;
     text-decoration: none;
     color: #F6F6F6;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+    transition: background-color 0.3s ease;
 }
 
 .home .apresentacao__links__link_home:hover {
     background-color: #96b7f36b;
-    padding: 15px 0; /* Aumenta o espaço interno ao passar o mouse (ajuste conforme necessário) */
+    padding: 15px 0;
 }
 
+/* Estilo para a imagem de apresentação na seção Home */
 .home .apresentacao_img_home {
-    padding-top: 110px; /* Espaço interno das divs */
+    padding-top: 110px;
     padding-left: 50px;
     margin: 0;
 }
 
-/* Estilo específico para a seção Sobre mim////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Estilo específico para a seção Sobre Mim */
 .sobremim {
-    padding-top: 100px; /* Espaço acima para iniciar a seção abaixo da Home */
-    margin-bottom: 206px; /* Espaço abaixo do contêiner */
+    padding-top: 100px;
+    margin-bottom: 206px;
 }
 
 .sobremim .apresentacao__conteudo__titulo_sobremim {
-    
-    font-size: 30px; /* Tamanho da fonte para a seção Sobre mim */
+    font-size: 30px;
     color: #F6F6F6;
     font-family: "Krona One", sans-serif;
-    line-height: 1.4; /* Espaçamento entre linhas */
-    
+    line-height: 1.4;
 }
 
 .sobremim .apresentacao__conteudo__titulo1_sobremim {
-    font-size: 20px; /* Tamanho da fonte para a seção Sobre mim */
+    font-size: 20px;
     color: #F6F6F6;
     font-family: "Krona One", sans-serif;
-    line-height: 1.4; /* Espaçamento entre linhas */
-    
+    line-height: 1.4;
 }
 
 .sobremim .apresentacao__conteudo__paragrafo_sobremim {
-    font-size: 22px; /* Tamanho da fonte para a seção Sobre mim */
+    font-size: 22px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin-top: 20px; 
     margin-bottom: 20px;
-    line-height: 1.1; /* Espaçamento entre linhas */
-    text-align: justify; /* Justifica o texto */
-    padding: 0; /* Remove o espaço interno das divs */
+    line-height: 1.1;
+    text-align: justify;
+    padding: 0;
 }
 
 .sobremim .apresentacao__links_sobremim {
@@ -277,251 +283,46 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
-    width: 90%; /* Ajusta a largura para ocupar 100% */
+    width: 90%;
     max-width: 378px;
-    font-size: 22px; /* Tamanho da fonte para a seção Sobre mim */
+    font-size: 22px;
     text-align: center;
     border-radius: 8px;
-    padding: 15px 1px; /* Espaço interno do link */
+    padding: 15.5px 1px;
     text-decoration: none;
     color: #F6F6F6;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+    transition: background-color 0.3s ease;
 }
 
 .sobremim .apresentacao__links__link_sobremim:hover {
     background-color: #96b7f36b;
-    padding: 15px 0; /* Aumenta o espaço interno ao passar o mouse (ajuste conforme necessário) */
+    padding: 15px 0;
 }
 
-/*LINHA DO TEMPO FORMAÇÃO///////////////////////////////////////////*/
-
-.timeline {
-    position: relative;
-    padding: 30px 2px;
-    list-style: none;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 32px;
-    left: 20px;
-    width: 2px;
-    height: 60%;
-    background: #ddd;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 50px;
-    padding-left: 50px;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: 10px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.timeline-content {
-    padding: 0;
-}
-
-.timeline-item h4 { /*ano da formação*/
-    margin: 0 0 5px;
-    color: #F6F6F6;
-    font-weight: bold;
-}
-
-.timeline-item p { /*curso*/
-    margin: 0;
-    color: #F6F6F6;
-}
-
-
-.circle {
-    position: absolute;
-    top: 20px; /* Ajuste a posição vertical conforme necessário */
-    left: 50px; /* Ajuste a posição horizontal conforme necessário */
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle at bottom, rgba(156, 76, 241, 0) 0%,  rgba(156, 76, 241, 0.7) 100%); /* Gradiente ajustado */
-    border-radius: 45%;
-    z-index: 1; /* Certifique-se de que o círculo fique atrás da imagem */
-}
-
-
+/* Estilo para a imagem de apresentação na seção Sobre Mim */
 .sobremim .apresentacao_img_sobremim {
-    padding-top: 10px; /* Espaço interno das divs */
-    padding:20px;
-    position: relative; 
+    padding-top: 100px;
+    margin: 0;
+    padding-left: 20px;
 }
 
-.apresentacao_img_sobremim img {
+/* Estilos para a animação de caricatura */
+.emoji-animacao {
     position: relative;
-    z-index: 2; /* Garante que a imagem fique acima do círculo */
+    font-size: 40px;
+    animation: pular 2s infinite ease-in-out;
 }
 
-/*seção Skill*/
-
-.skills {
-    padding-top: 150px; /* Espaço acima para iniciar a seção abaixo da Home */
-    margin-bottom: 206px; /* Espaço abaixo do contêiner */
-}
-
-.skills-section-container{
-    padding-top: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skills-section{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
-.skills-heading{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.skills-heading-article{
-    font-size:3rem;
-    font-family: "Krona One", sans-serif;
-    font-weight: 600;
-    background-image: -webkit-gradient(linear,left top,right top,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: linear-gradient(90deg,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.skillsHeadingP{
-    width: 300px;
-    height: 1px;
-    background-image: -webkit-gradient(linear,left top,right top,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: linear-gradient(90deg,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-
-}
-
-.language-speak{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    justify-content: center;
-}
-.language-speak article{
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: fira code;
-    color: var(--color-white);
-}
-.frontend-dev-section{
-    width: 100%;
-    margin-top: 50px;
-}
-.frontend-dev-heading{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: 900;
-    height: 100px;
-    letter-spacing: 5px;
-    background-image: -webkit-gradient(linear,left top,right top,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: linear-gradient(90deg,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.tech-stack-wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:50px;
-    margin-top: 50px;
-
-}
-.tech-stack-box{
-    width: 160px;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    background-image: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-    border: 1px solid var(--tech-stack-box-border-color);
-    /* box-shadow: 0px 10px 20px var(--color-shadowDark); */
-    position: relative;
-}
-.tech-stack-box img{
-    width: 80%;
-}
-.tech-stack-box:hover .tooltip {
-    opacity: 1;
-    transition-duration: .3s;
-  }
-.tooltip {
-    position: absolute;
-    top: -20px;
-    opacity: 0;
-    background: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-    border: 1px solid var(--tech-stack-box-border-color);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .2s;
-    pointer-events: none;
-    letter-spacing: 0.5px;
-    font-size: 1.6rem;
-    backdrop-filter: blur(5px);
-    font-weight: 500;
-  }
-
-  .section-heading{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.section-heading-article{
-    font-size:3rem;
-    font-family: "Krona One", sans-serif;
-    font-weight: 600;
-    background-image: -webkit-gradient(linear,left top,right top,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: -webkit-linear-gradient(left,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-image: linear-gradient(90deg,var(--static-heading-gradient-blue),var(--static-heading-gradient-pink));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.rodape {
-    color: #000000;
-    background-color: #22D4FD;
-    padding: 8px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+@keyframes pular {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
