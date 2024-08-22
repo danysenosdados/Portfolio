@@ -73,7 +73,7 @@ body {
     line-height: 1;
     font-family: 'Space Grotesk', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(#041833,#04244F,#154580);
+    background: linear-gradient(#041833, #04244F, #154580);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,10 +83,9 @@ body {
 .cabecalho {
     display: flex;
     align-items: center;
-    background: linear-gradient(#041833,#04244F,#154580);
-    justify-content: flex-start;
+    background: linear-gradient(#041833, #04244F, #154580);
+    justify-content: space-between;
     padding: 0 20px;
-    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -123,8 +122,6 @@ body {
 /* Estilo para imagens dentro do cabeçalho */
 .cabecalho img {
     margin-right: 30px;
-    margin-left: 220px;
-    padding: 0;
 }
 
 /* Estilo para o menu de navegação no cabeçalho */
@@ -132,9 +129,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-right: auto;
-    margin-left: 250px;
-    margin-top: 0;
 }
 
 .cabecalho__menu__link {
@@ -159,7 +153,7 @@ body {
 
 /* Estilo para a seção de apresentação */
 .apresentacao {
-    padding-left: 20%;
+    padding: 20px;
     margin-top: 150px;
 }
 
