@@ -78,13 +78,19 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(#041833,#04244F,#154580);
-    justify-content: flex-start; /* Alinha itens à esquerda */
-    padding: 0 20px;
+    justify-content: center; /* Alinha itens à esquerda */
+    margin-left: 120px ;
+    margin-top: 6px ;
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 1800px; /* Opcional: define um limite máximo de largura */
+    z-index: 1100;
+    border-radius: 60px; /* Arredonda as pontas da barra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efeito 3D */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda clara para destaque */
+    
 }
 
 /*logo///////////////////////////////////////*/
@@ -175,6 +181,7 @@ body {
     font-size: 36px;
     font-family: "Krona One", sans-serif;
     line-height: 1.4; /* Espaçamento entre linhas */
+    color: #F6F6F6;
 }
 
 .home .titulo-destaque_home {
@@ -189,6 +196,7 @@ body {
     line-height: 1.1; /* Espaçamento entre linhas */
     text-align: justify; /* Justifica o texto */
     padding: 0; /* Remove o espaço interno das divs */
+    color: #F6F6F6;
 }
 
 .home .apresentacao__links_home {
@@ -233,6 +241,54 @@ body {
 .sobremim {
     padding-top: 100px; /* Espaço acima para iniciar a seção abaixo da Home */
     margin-bottom: 206px; /* Espaço abaixo do contêiner */
+}
+
+.computador {
+    width: 120px;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F6F6F6;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    
+    
+}
+
+.computador span {
+    font-weight: bold;
+}
+
+.janelinha {
+    position:relative;
+    top: 45%;
+    left: 40%;
+    gap: 2px;
+    margin-bottom: 5px;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#81D5FA,#a9cedd,#b7c3c9);
+    padding: 20px;
+    border-radius: 20px; /* Arredonda as pontas da barra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efeito 3D */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda clara para destaque */
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Para garantir que a janela fique acima de outros elementos */
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.janelinha.fechar {
+    animation: slide-up 0.5s ease-in-out forwards;
 }
 
 .sobremim .apresentacao__conteudo__titulo_sobremim {
@@ -346,27 +402,142 @@ body {
 }
 
 
-.circle {
-    position: absolute;
-    top: 20px; /* Ajuste a posição vertical conforme necessário */
-    left: 50px; /* Ajuste a posição horizontal conforme necessário */
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle at bottom, rgba(156, 76, 241, 0) 0%,  rgba(156, 76, 241, 0.7) 100%); /* Gradiente ajustado */
-    border-radius: 45%;
-    z-index: 1; /* Certifique-se de que o círculo fique atrás da imagem */
-}
-
-
 .sobremim .apresentacao_img_sobremim {
     padding-top: 10px; /* Espaço interno das divs */
-    padding:20px;
     position: relative; 
+    padding:20px;
+  
+    
 }
 
 .apresentacao_img_sobremim img {
     position: relative;
-    z-index: 2; /* Garante que a imagem fique acima do círculo */
+    z-index: 1; /* Garante que a imagem fique acima do círculo */
+}
+
+.apresentacao_img_sobremim_cod {
+    position: relative;
+    top: -50px; /* Ajusta a posição da imagem de código */
+    right: 20%;
+    opacity:inherit;
+    
+}
+.diagram-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative; /* Necessário para que as janelinhas sejam posicionadas corretamente */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: black;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.middle {
+    top: 50%;
+    width: 100px; /* Largura estendida para conectar com banco de dados e caixinha */
+    height: 210px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.database, .box {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    position: absolute;
+}
+
+.database {
+    top: 50%;
+    left: 100px; /* Alinhe com a linha do meio */
+}
+
+
+.line-main {
+    width: 5px;
+    height: 220px; /* Aumenta a altura para conectar melhor o banco de dados */
+    background-color: black;
+    margin-right: -20px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.branches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Ajusta a altura conforme a linha principal */
+}
+
+.branch-container {
+    display: flex;
+    align-items: center;
+}
+.linhas{
+    height: 10px;
+    margin-bottom: 200px;
+}
+.line-branch {
+    width: 80px;
+    height: 5px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.line-branch-middle {
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.box {
+    bottom: 0;
+    left: 100px; /* Alinhe com a linha do meio */
+}
+
+.info-box {
+    width: 270px;
+    height: 55px;
+    padding: 8px; /* Adiciona preenchimento interno */
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    align-items:first baseline;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.bold-text {
+ font-weight: bold; /* Define o texto como negrito */
+ font-size: 17px;
+}
+
+.info-box p {
+    margin: 4px 0; /* Adiciona margem entre os textos */
+    font-size: auto;
+    color: #000000;
+    text-align: center;
+
 }
 
 /*seção Skill*/
@@ -497,9 +668,9 @@ body {
     font-size: 1.6rem;
     backdrop-filter: blur(5px);
     font-weight: 500;
-  }
+}
 
-  .section-heading{
+.section-heading{
     width: 100%;
     display: flex;
     align-items: center;
