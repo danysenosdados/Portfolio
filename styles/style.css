@@ -72,6 +72,14 @@ body {
     
 }
 
+@media (max-width: 768px) {
+    .cabecalho {
+        border-radius: 0; /* Ajusta para telas pequenas */
+        justify-content: space-between; /* Ajuste para melhor visualização */
+        padding: 0 20px;
+    }
+}
+
 /*LOGO DO MENU*/
 .logo-container {
     position: relative;
