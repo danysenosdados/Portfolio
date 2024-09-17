@@ -82,15 +82,15 @@ body {
 
 /*LOGO DO MENU*/
 .logo-container {
-    position: ab;
+    position: relative;
     width: 80px;
-    height: 80px;
+    height: 100px;
 }
 
 .logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 200%;
     transition: opacity 0.2s ease-in-out; /* Aumenta a velocidade da transição */
 }
 
