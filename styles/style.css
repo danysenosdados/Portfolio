@@ -59,12 +59,12 @@ body {
     background: linear-gradient(#041833,#04244F,#154580);
     justify-content: center; /* Alinha itens à esquerda */
     margin-left: 7% ;
-    margin-top: 6px ;
+    margin-top: 0.5% ;
     background-color: #333;
     position: fixed;
     top: 0;
     width: 100%; /* Ajuste a largura conforme necessário */
-    max-width: 1800px; /* Opcional: define um limite máximo de largura */
+    max-width: 85%; /* Opcional: define um limite máximo de largura */
     z-index: 1100;
     border-radius: 60px; /* Arredonda as pontas da barra */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efeito 3D */
