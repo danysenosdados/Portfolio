@@ -84,7 +84,7 @@ body {
 .logo-container {
     position: relative;
     width: 30px;
-    height: 79.9px;
+    height: 80px;
 }
 
 .logo {
@@ -119,7 +119,7 @@ body {
     flex-direction: row; /* Mantém os itens em linha */
     gap: 10px; /* Espaço entre os itens */
     margin-right: auto; /* Empurra o menu para o lado esquerdo */
-    margin-left: 250px;
+    margin-left: 150px;
     margin-top: 0;
 }
 
@@ -153,28 +153,27 @@ body {
 /* Estilo para a seção geral */
 .apresentacao {
     padding-left: 20%; /* Espaço à esquerda para mover o conteúdo para o centro */
-    margin-top: 150px; /* Espaço acima para iniciar a seção abaixo do cabeçalho */
+    margin-top: 0%; /* Espaço acima para iniciar a seção abaixo do cabeçalho */
 }
 
 .grid-container {
     display: grid; /* Torna o contêiner um grid container */
     grid-template-columns: repeat(2, 1fr); /* Cria duas colunas iguais */
     gap: 50px; /* Espaço entre as colunas */
-    padding-bottom: 30px;
+    padding-bottom: 3px;
     position: relative;
 }
 
 /* Estilo para cada item no grid */
 .grid-item {
     padding: 0; /* Espaço interno das divs */
-    padding-top: 150px;
-    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    padding-top: 110px;
     position: relative;
 }
 
 /* Estilo específico para a seção Home /////////////////////////////////////////////////////////////////////////////////*/
 .home .apresentacao__conteudo__titulo_home {
-    font-size: 36px;
+    font-size: 30px;
     font-family: "Krona One", sans-serif;
     line-height: 1.4; /* Espaçamento entre linhas */
     color: #F6F6F6;
