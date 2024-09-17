@@ -74,7 +74,7 @@ body {
 
 @media (max-width: 768px) {
     .cabecalho {
-        border-radius: 0; /* Ajusta para telas pequenas */
+        border-radius: 60px; /* Ajusta para telas pequenas */
         justify-content: space-between; /* Ajuste para melhor visualização */
         padding: 0 20px;
     }
