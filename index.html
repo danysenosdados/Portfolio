@@ -25,7 +25,7 @@
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="#home">Home</a>
             <a class="cabecalho__menu__link" href="#sobre-mim">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="#skills">Habilidades</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
         </nav>
     </header>
 
@@ -71,99 +71,352 @@
         <!-- Sobre mim -->
         <section id="sobre-mim" class="sobremim">
             <div class="grid-container">
-                
                 <div class="grid-item">                  
-                    <h2 class="section-heading-article">Sobre mim</h2>
+                    <h2 class="h2">Sobre mim</h2>
                     
-                    <div id="formacao-info" class="janelinha">
-                        <p>Informações sobre formação...</p>
-                        <p>Informações sobre formação...</p>
-                        <p>Informações sobre formação...</p>
-                        <p>Informações sobre formação...</p>
-                        <button class="fechar">Fechar</button>
-                    </div>
-                    <div id="experiencia-info" class="janelinha">
-                        <p>Informações sobre experiência...</p>
-                        <p>Informações sobre experiência...</p>
-                        <p>Informações sobre experiência...</p>
-                        <p>Informações sobre experiência...</p>
-                        <button class="fechar">Fechar</button>
-                    </div>
-                    <div id="skill-info" class="janelinha">
-                        <p>Informações sobre skills...</p>
-                        <p>Informações sobre skills...</p>
-                        <p>Informações sobre skills...</p>
-                        <p>Informações sobre skills...</p>
-                        <button class="fechar">Fechar</button>
-                    </div>
+                    <!-- Janela de Formação (visível por padrão) -->
+                    <div class="janela-modal abrir" id="janela-formacao">
+                        <div class="modal">
+                            <h3 class="h3">Minha Formação</h3>
+
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2024</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Pós-graduação em Ciência de dados</h4>
+                                        <p>UNINASSAU</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2023</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Pós-graduação em Banco de dados e BI</h4>
+                                        <p>Cruzeiro do Sul Virtual</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2019</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Graduação em Administração</h4>
+                                        <p>UFRPE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>    
+                    
+                    <!-- Janela de Experiências -->
+                    <div class="janela-modal" id="janela-exp">
+                        <div class="modal">
+                            <h3 class="h3">Minhas Experiências</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022 - Atual</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Técnica de dados</h4>
+                                        <p>G4F Soluções Corporativas</p>
+                                    </div>
+                                </div> 
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2015 - 2022</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Faturista</h4>
+                                        <p>Solivetti Comercio e Serviços</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2013 - 2014</div>
+                                    <div class="timeline-content">
+                                        <h4 class="curso">Auxiliar de faturamento</h4>
+                                        <p>ACM Suprimentos e Serviços</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+        
+                    <!-- Janela de Skills -->
+                    <div class="janela-modal" id="janela-skill">
+                        <div class="modal">
+                            <h3 class="h3">Minhas Habilidades</h3>
+                            <div class="frontend-dev-section">
+
+                                <ul class="lista">
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+                                        <span class="tooltip">HTML</span>
+                                    </li>
                         
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+                                        <span class="tooltip">CSS</span>
+                                    </li>
+                        
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/pythonlogo.png" alt="Python skill" class="tech-stack-logo" />
+                                        <span class="tooltip">Python</span>
+                                    </li>
+                        
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+                                        <span class="tooltip">GitHub</span>
+                                    </li>
+                        
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/sqllogo.png" alt="Sql skill" class="tech-stack-logo" />
+                                        <span class="tooltip">SQL</span>
+                                    </li>
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
+                                        <span class="tooltip">Figma</span>
+                                    </li>
+                        
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/powerappslogo.png" alt="Power apps skill" class="tech-stack-logo" />
+                                        <span class="tooltip">PowerApps</span>
+                                    </li>
+
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/poerbilogo.png" alt="Power BI skill" class="tech-stack-logo" />
+                                        <span class="tooltip">PowerBI</span>
+                                    </li>
+
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/excellogo.png" alt="excel skill" class="tech-stack-logo" />
+                                        <span class="tooltip">VBA</span>
+                                    </li>
+
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/powerautomatelolgo.png" alt="PowerAutomate skill" class="tech-stack-logo" />
+                                        <span class="tooltip">PowerAutomate</span>
+                                    </li>
+
+                                    <li class="lista_box" data-aos="fade-up">
+                                        <img src="./src/png/airflowlogo.png" alt="AirFlow skill" class="tech-stack-logo" />
+                                        <span class="tooltip">AirFlow</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
                 <div  class="apresentacao_img_sobremim">
                     <div class="database-icon">
-                        <img src="src/png/cloud.png" alt="Computadores"  width="850" height="600" style="top: 70%; right: 25%;">
+                        <img src="src/png/cloud.png" alt="Computadores"  width="850" height="600" style="padding-top: 5%; right: 15%;">
                     </div>
-
-                    <div class="computador" id="formacao" style="top: 58%; right: 99%;">
-                        <span>Formação</span>
-                    </div>
-                    <div class="computador" id="experiencia" style="top: 72%; left: 19.5%;">
-                        <span>Experiências</span>
-                    </div>
-                    <div class="computador" id="skill" style="top: 58%; left: 51.5%;">
-                        <span>Skills</span>
-                    </div>
+        
+                    <div onclick="abrirModal('formacao')" class="btn" style="top: 60%; right: 89.5%;">Formação</div>
+                    <div onclick="abrirModal('exp')" class="btn" style="top: 73%; left: 29%;">Experiências</div>
+                    <div onclick="abrirModal('skill')" class="btn" style="top: 60%; left: 61%;">Skills</div>
                 </div>
             </div>
         </section>
 
 
-        <!-- Habilidades -->
-        <section class="skills" id="skills">
-            <div class="skills-section">
-             
-                <h1 class="section-heading-article">habilidades</h1>
-      
-                <div class="frontend-dev-section">
+        <!--projetos-->
+        
+         
+        <section class="projects-section-container" id="projetos" style="margin-top:10px;>
 
-                    <ul class="tech-stack-wrapper">
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-                        <span class="tooltip">HTML</span>
-                    </li>
-        
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-                        <span class="tooltip">CSS</span>
-                    </li>
-        
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-                        <span class="tooltip">JS</span>
-                    </li>
-        
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-                        <span class="tooltip">GITHUB</span>
-                    </li>
-        
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-                        <span class="tooltip">GIT</span>
-                    </li>
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-                        <span class="tooltip">FIGMA</span>
-                    </li>
-        
-                    <li class="tech-stack-box" data-aos="fade-up">
-                        <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
-                        <span class="tooltip">CANVA</span>
-                    </li>
-                    </ul>
+            
+            <div class="projects-section-div">
+
+                <h2 class="h2" class="btn" style="margin-top:10px; margin-right: 136%;">Projetos</h2>
+
+                <div class="section-heading" data-aos="fade-up">
+                <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+                    &#60;/Projects&#62;
+                </h2>
+                <p class="sectionHeadingP"></p>
                 </div>
-
-            </div>
-          </section>
+                <div class="project-boxes-div">
+                <div data-aos="fade-up" class="project-box-wrapper">
+                    <div class="project-box project-box2" id="project-box2">
+                    <div class="info-div">
+                        <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
+                        <article class="ProjectHeading">Pexelicons</article>
+                        <p class="ProjectDescription">
+                        Pexelicons: A world of personalized file folder icons to
+                        transform your PC into a reflection of your style.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://github.com/Danyell07/Pexelicons" target="_blank" class="github-redirect"
+                            aria-label="Visit Pexelicons on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                        <a href="https://Danyell.site/Pexelicons/" target="_blank" class="cta"
+                            aria-label="Visit Pexelicons Live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="project-box-wrapper" data-aos="fade-up">
+                    <div class="project-box project-box5" id="project-box5">
+                    <div class="info-div">
+                        <img src="src/webp/cropped-1086600-192x192.webp" alt="comickaze website favicon"
+                        class="faviconforProject" />
+                        <article class="ProjectHeading">ComicKaze</article>
+                        <p class="ProjectDescription">
+                        ComicKaze is an ecommerce website built on wordpress by me
+                        as a freelancer. It specializes in selling anime
+                        merchandise.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://comickaze.in" target="_blank" class="cta" aria-label="Visit Comickaze live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/comickaze-preview.webp" alt="comickaze website preview image" />
+                    </div>
+                    </div>
+                </div>
+        
+                <!-- ---------------------- -->
+                <div class="project-box-wrapper" data-aos="fade-up">
+                    <div class="project-box project-box2" id="project-box2">
+                    <div class="info-div">
+                        <img src="src/svg/aquaregia-favicon.svg" alt="Aquaregia website favicon"
+                        class="faviconforProjectAquaregia" />
+                        <article class="ProjectHeading">Aquaregia</article>
+                        <p class="ProjectDescription">
+                        A website for University Maharaja College fest "Aquaregia"
+                        for event registrations.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://github.com/Danyell07/Aquaregia" target="_blank" class="github-redirect"
+                            aria-label="Visit Aquaregia on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                        <a href="https://Danyell.site/Aquaregia/" target="_blank" class="cta"
+                            aria-label="Visit Aquaregia Live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/Aquaregia-project.webp" alt="Aquaregia website preview image" />
+                    </div>
+                    </div>
+                </div>
+                <!-- ---------------------- -->
+                <div class="project-box-wrapper" data-aos="fade-up">
+                    <div class="project-box project-box4" id="project-box4">
+                    <div class="info-div">
+                        <img src="src/webp/qr-favicon.webp" alt="Qr generator website favicon" class="faviconforProject" />
+                        <article class="ProjectHeading">QR Generator</article>
+                        <p class="ProjectDescription">
+                        A webpage to make a QR Code from text using API.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://github.com/Danyell07/QR-Generator" target="_blank" class="github-redirect"
+                            aria-label="Visit qr generator on github">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                        <a href="https://Danyell.site/QR-Generator/" target="_blank" class="cta"
+                            aria-label="Visit qr generator live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/QRgeneratorProject.webp" alt="qr generator website preview image" />
+                    </div>
+                    </div>
+                </div>
+        
+                <!-- ---------------------- -->
+                <div class="project-box-wrapper" data-aos="fade-up">
+                    <div class="project-box project-box3" id="project-box3">
+                    <div class="info-div">
+                        <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
+                        <article class="ProjectHeading">React Netflix Clone</article>
+                        <p class="ProjectDescription">
+                        A webpage to categorize the shows to redirect user to watch
+                        the show.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://github.com/Danyell07/Netflix-clone" target="_blank" class="github-redirect"
+                            aria-label="Visit Netflix clone on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                        <a href="https://react-project-20.netlify.app/" target="_blank" class="cta"
+                            aria-label="Visit netflix clone live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
+                    </div>
+                    </div>
+                </div>
+        
+                <!-- ---------------------- -->
+        
+                <div class="project-box-wrapper" data-aos="fade-up">
+                    <div class="project-box project-box1" id="project-box1">
+                    <div class="info-div">
+                        <img src="src/webp/axocean-favicon.webp" alt="Axocean website favicon" class="faviconforProject" />
+                        <article class="ProjectHeading">AXOCEAN</article>
+                        <p class="ProjectDescription">
+                        E-commerce website frontend work to choose people their
+                        favorite design of product and redirect to flipkart shopping
+                        site.
+                        </p>
+                        <div class="project-buttons">
+                        <a href="https://github.com/Danyell07/AXOCEAN" target="_blank" class="github-redirect"
+                            aria-label="Visit axocean on GitHub">
+                            <img src="src/svg/github.svg" alt="github redirect button" />
+                        </a>
+                        <a href="https://www.Danyell.site/AXOCEAN/" target="_blank" class="cta"
+                            aria-label="Visit axocean live">
+                            <span>Live view</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img src="src/webp/AXOCEAN-project.webp" alt="Axocean website preview image" />
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            
+            </section>
 
     </main>
 
@@ -171,8 +424,7 @@
     <footer class="rodape">
         <p>Desenvolvido por Danyelle Melo.</p>
     </footer>
-
-    <script src="./scripts/script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
