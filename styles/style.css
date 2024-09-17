@@ -140,7 +140,7 @@ body {
 }
 
 #sobre-mim {
-    scroll-margin-top: 5px; /* Ajuste esse valor conforme a altura do cabeçalho */
+    scroll-margin-top: 10px; /* Ajuste esse valor conforme a altura do cabeçalho */
     padding-bottom: 10px;
 }
 
@@ -571,7 +571,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin:  0;
     overflow: hidden; /* Esconde o conteúdo que está fora da área visível */
 }
 
@@ -581,6 +581,11 @@ body {
     display: flex;
     scroll-behavior:inherit; /* Faz com que a rolagem seja suave */
     white-space: nowrap; 
+}
+
+/* Para navegadores baseados em WebKit */
+.scrollable-projects::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
 }
 
 .project-boxes-div{
@@ -667,7 +672,7 @@ body {
     border-top-left-radius:30px;
 }
 .ProjectHeading{
-    color: var(--color-white);
+    color: #f6f6f6;
     font-size: 3.4rem;
     font-weight: 700;
 }
