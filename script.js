@@ -21,3 +21,25 @@ function scrollProjects(direction) {
         behavior: 'smooth' 
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const leftButton = document.querySelector('.left-button');
+    const rightButton = document.querySelector('.right-button');
+    const scrollableProjects = document.querySelector('.scrollable-projects');
+
+    // Rola para a esquerda
+    leftButton.addEventListener('click', () => {
+        scrollableProjects.scrollBy({
+            left: -300,  // Quantidade de pixels para rolar para a esquerda
+            behavior: 'smooth'  // Faz com que a rolagem seja suave
+        });
+    });
+
+    // Rola para a direita
+    rightButton.addEventListener('click', () => {
+        scrollableProjects.scrollBy({
+            left: 300,  // Quantidade de pixels para rolar para a direita
+            behavior: 'smooth'  // Faz com que a rolagem seja suave
+        });
+    });
+});
