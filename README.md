@@ -1,5 +1,5 @@
 
-# Olá, sou Danyelle! 👋🏻  
+# ![Minha Foto](https://github.com/danysenosdados/Portfolio/blob/main/src/avatar2.png)  Olá, sou Danyelle!  
 
 📍 **Recife - PE**  
 
