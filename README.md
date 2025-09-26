@@ -5,7 +5,7 @@
 
 🎓 **Formada em Administração** e **Pós-graduada em Banco de Dados e BI**  
 
-💼 **Atualmente, sou Analista de Dados na G4F, atuando na CHESF**  
+💼 **Atualmente, sou Analista de BI na Join, atuando na SGE-PE**  
 
 📊 **Experiência com:**  
 - **SQL** | **Power BI** | **Qlik Sense** | **SAP PM**  
