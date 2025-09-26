@@ -1,7 +1,7 @@
 
 # ![Minha Foto](https://github.com/danysenosdados/Portfolio/blob/main/src/avatar2.png)  Olá, sou Danyelle!  
 
-📍 **Recife - PE**  
+📍 **São Paulo - SP**  
 
 🎓 **Formada em Administração** e **Pós-graduada em Banco de Dados e BI**  
 
