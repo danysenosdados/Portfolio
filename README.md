@@ -25,14 +25,14 @@
 
 ![Python](https://img.shields.io/badge/Python-000?style=for-the-badge&logo=python)
 ![GitLab](https://img.shields.io/badge/GitLab-000?style=for-the-badge&logo=gitlab&logoColor=E24329)   
-![Power BI](https://img.shields.io/badge/Power%20BI-000?style=for-the-badge&logo=powerbi&logoColor=F2C811) 
-![Air Flow] ()
+![Power BI](https://img.shields.io/badge/Power%20BI-000?style=for-the-badge&logo=powerbi&logoColor=F2C811)
+![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-000?style=for-the-badge&logo=apache-airflow&logoColor=017CEE)
+![Pentaho](https://img.shields.io/badge/Pentaho%20PDI%2FCDE-000?style=for-the-badge&logo=pentaho&logoColor=005DA6)
 ![SAP](https://img.shields.io/badge/SAP-000?style=for-the-badge&logo=sap&logoColor=0FAAFF)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=for-the-badge&logo=postgresql&logoColor=336791)
 
 ### Conhecimentos
 
-![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-000?style=for-the-badge&logo=apacheairflow&logoColor=017CEE)
 ![HTML5](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5&logoColor=30A3DC)
 ![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=E94D5F)
   
