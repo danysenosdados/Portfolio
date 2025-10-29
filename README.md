@@ -8,7 +8,7 @@
 💼 **Atualmente, sou Analista de BI na Join, atuando na SGE-PE**  
 
 📊 **Experiência com:**  
-- **SQL** | **Power BI** | **Qlik Sense** | **SAP PM**  
+- **SQL** | **Power BI** | **Air Flow** | **SAP PM**  
 - Modelagem de dados e criação de dashboards interativos  
 - Análise de processos e otimização de indicadores  
 - Integração de dados e automação de relatórios  
@@ -18,17 +18,15 @@
 
 ## 🌐 Conecte-se comigo
 
-[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://www.dio.me/users/danyelle_dados)
 [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=E94D5F)](mailto:danyelle.dados@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=30A3DC)](https://www.linkedin.com/in/danyellemelo)
 
 ### Habilidades
 
 ![Python](https://img.shields.io/badge/Python-000?style=for-the-badge&logo=python)
-![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=E94D5F)
-![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)
 ![GitLab](https://img.shields.io/badge/GitLab-000?style=for-the-badge&logo=gitlab&logoColor=E24329)   
 ![Power BI](https://img.shields.io/badge/Power%20BI-000?style=for-the-badge&logo=powerbi&logoColor=F2C811) 
+![Air Flow] ()
 ![SAP](https://img.shields.io/badge/SAP-000?style=for-the-badge&logo=sap&logoColor=0FAAFF)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=for-the-badge&logo=postgresql&logoColor=336791)
 
