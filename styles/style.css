@@ -10,6 +10,17 @@
     vertical-align: baseline;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
 :root{
     --color-shadowDark:rgba(0, 0, 0, 0.137);
     --tech-stack-box-first-color:#cac2c22f;
