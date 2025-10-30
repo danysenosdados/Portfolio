@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Danyelle Melo | Portifolio</title>
+    <title>Danyelle Melo | Home</title>
 
-    <!-- Ligação do CSS com o HTML -->
     <link rel="stylesheet" href="./styles/style.css">
 
     <link rel="icon" href="src/avatar_topo.png" type="image/x-icon">
@@ -16,45 +15,51 @@
 
 <body>
 
-    <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="logo-container">
-            <img class="logo logo-principal" src="src/logo.png" alt="Logo desenvolvedora" width="80" height="80"/>
-            <img class="logo logo-hover" src="src/logo_alternativa.png" alt="Logo alternativa" width="80" height="75.8"/>
+            <img class="logo logo-principal" src="src/logo.png" alt="Logo desenvolvedora" width="80" height="80" />
+            <img class="logo logo-hover" src="src/logo_alternativa.png" alt="Logo alternativa" width="80" height="75.8" />
         </div>
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#home">Home</a>
-            <a class="cabecalho__menu__link" href="#sobre-mim">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre-mim.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main class="apresentacao">
-        <!-- Home -->
         <section id="home" class="home">
             <div class="grid-container">
                 <div class="grid-item">
                     <h1 class="apresentacao__conteudo__titulo_home">
-                        Olá! Eu sou Danyelle Melo,
+                        Olá!
+                    </h1>
+                    <h1 class="apresentacao__conteudo__titulo_home">
+                        Eu sou Danyelle Melo,
                     </h1>
                     <p class="apresentacao__conteudo__titulo_home">
-                        <strong class="titulo-destaque_home">mas pode me chamar de Dany!</strong>
+                        <strong class="titulo-destaque_home">especialista que conecta dados ao valor do negócio.</strong>
                     </p>
                     <p class="apresentacao__conteudo__paragrafo_home">
-                        Sou analista de dados com uma sólida experiência em BI, Python, SQL e outras tecnologias.
+                        Minha paixão é criar 
+                        <strong class="titulo-destaque_home">soluções de dados completas</strong>, estruturando a 
+                        informação desde a fonte até o 
+                        <strong class="titulo-destaque_home">insight estratégico e a decisão final</strong>.
                     </p>
+
                     <p class="apresentacao__conteudo__paragrafo_home">
-                        Tenho interesse em expandir minhas habilidades em diversas áreas da tecnologia, sempre em busca de novos desafios e aprendizados. Este portfólio reflete meu entusiasmo pelo aprendizado contínuo e pela descoberta de novas possibilidades. Vamos conversar?
+                        <strong class="titulo-destaque_home">Vamos conectar e explorar como essa 
+                            sinergia pode impulsionar seus próximos projetos?</strong>
                     </p>
+
                     <div class="apresentacao__links_home">
                         <a class="apresentacao__links__link_home" href="https://www.linkedin.com/in/danyellemelo/">
-                            <img width="25" height="24" src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin"/>
-                            Linkedin
+                            <img width="25" height="24" src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin" />
+                            <span>Linkedin</span>
                         </a>
                         <a class="apresentacao__links__link_home" href="mailto:danyelle.dados@gmail.com">
-                            <img width="25" height="24" src="https://img.icons8.com/3d-fluency/94/paper-plane.png" alt="paper-plane"/>
-                            Email
+                            <img width="25" height="24" src="https://img.icons8.com/3d-fluency/94/paper-plane.png" alt="paper-plane" />
+                            <span>Email</span>
                         </a>
                     </div>
                 </div>
@@ -63,366 +68,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Sobre mim -->
-        <section id="sobre-mim" class="sobremim">
-            <div class="grid-container">
-                <div class="grid-item">                  
-                    <h2 class="h2">Sobre mim</h2>
-                    
-                    <!-- Janela de Formação (visível por padrão) -->
-                    <div class="janela-modal abrir" id="janela-formacao">
-                        <div class="modal">
-                            <h3 class="h3">Minhas Formações</h3>
-
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2024</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Pós-graduação em Ciência de dados</h4>
-                                        <p class="p">UNINASSAU</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2023</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Pós-graduação em Banco de dados e BI</h4>
-                                        <p class="p">Cruzeiro do Sul Virtual</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2019</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Graduação em Administração</h4>
-                                        <p class="p">UFRPE</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>    
-                    
-                    <!-- Janela de Experiências -->
-                    <div class="janela-modal" id="janela-exp">
-                        <div class="modal">
-                            <h3 class="h3">Minhas Experiências</h3>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2022 - Atual</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Técnica de dados</h4>
-                                        <p class="p">G4F Soluções Corporativas</p>
-                                    </div>
-                                </div> 
-
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2015 - 2022</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Faturista</h4>
-                                        <p class="p">Solivetti Comercio e Serviços</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-date">2013 - 2014</div>
-                                    <div class="timeline-content">
-                                        <h4 class="curso">Auxiliar de faturamento</h4>
-                                        <p class="p">ACM Suprimentos e Serviços</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-        
-                    <!-- Janela de Skills -->
-                    <div class="janela-modal" id="janela-skill">
-                        <div class="modal">
-                            <h3 class="h3">Minhas Habilidades</h3>
-                            <div class="frontend-dev-section">
-
-                                <ul class="lista">
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-                                        <span class="tooltip">HTML</span>
-                                    </li>
-                        
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-                                        <span class="tooltip">CSS</span>
-                                    </li>
-                        
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/pythonlogo.png" alt="Python skill" class="tech-stack-logo" />
-                                        <span class="tooltip">Python</span>
-                                    </li>
-                        
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-                                        <span class="tooltip">GitHub</span>
-                                    </li>
-                        
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/sqllogo.png" alt="Sql skill" class="tech-stack-logo" />
-                                        <span class="tooltip">SQL</span>
-                                    </li>
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-                                        <span class="tooltip">Figma</span>
-                                    </li>
-                        
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/powerappslogo.png" alt="Power apps skill" class="tech-stack-logo" />
-                                        <span class="tooltip">PowerApps</span>
-                                    </li>
-
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/poerbilogo.png" alt="Power BI skill" class="tech-stack-logo" />
-                                        <span class="tooltip">PowerBI</span>
-                                    </li>
-
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/excellogo.png" alt="excel skill" class="tech-stack-logo" />
-                                        <span class="tooltip">VBA</span>
-                                    </li>
-
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/powerautomatelolgo.png" alt="PowerAutomate skill" class="tech-stack-logo" />
-                                        <span class="tooltip">PowerAutomate</span>
-                                    </li>
-
-                                    <li class="lista_box" data-aos="fade-up">
-                                        <img src="./src/png/airflowlogo.png" alt="AirFlow skill" class="tech-stack-logo" />
-                                        <span class="tooltip">AirFlow</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div  class="apresentacao_img_sobremim">
-                    <div class="database-icon">
-                        <img src="src/png/cloud.png" alt="Computadores"  width="600" height="500" style="padding-top: 15%; right: 15%;">
-                    </div>
-        
-                    <div onclick="abrirModal('formacao')" class="btn" style="top: 62.5%; right: 86%;">Formação</div>
-                    <div onclick="abrirModal('exp')" class="btn" style="top: 74%; left: 26.5%;">Experiências</div>
-                    <div onclick="abrirModal('skill')" class="btn" style="top: 63%; left: 58%;">Skills</div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--projetos-->
-        
-         
-        <section class="sobremim" id="projetos" style="margin: top 5px;">
-
-            
-            <div class="projects-section-div">
-
-                <h2 class="h2"  style="margin-top:40px; margin-right: 80%; margin-bottom:30px;">Projetos</h2>
-
-                <div class="project-container">
-                    <button class="scroll-button left-button">◀</button>
-                    
-                    <div class="scrollable-projects">
-                        <div class="project-boxes-div">
-                            <div data-aos="fade-up" class="project-box-wrapper">
-                                <div class="project-box project-box2" id="project-box2">
-                                    <div class="info-div">
-                                    
-                                    <article class="ProjectHeading">BI</article>
-                                    <p class="ProjectDescription">
-                                    BI - Tickets: A world of personalized file folder icons to
-                                    transform your PC into a reflection of your style.
-                                    </p>
-                                    <div class="project-buttons">
-                                        <a href="https://github.com/Danyell07/Pexelicons" target="_blank" class="github-redirect"
-                                            aria-label="Visit Pexelicons on GitHub">
-                                            <img src="src/svg/github.svg" alt="github redirect button" />
-                                        </a>
-                                        <a href="https://Danyell.site/Pexelicons/" target="_blank" class="cta"
-                                            aria-label="Visit Pexelicons Live">
-                                            <span>Live view</span>
-                                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                            <path d="M1,5 L11,5"></path>
-                                            <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    </div>
-                                    <div class="image-div">
-                                    <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
-                                    </div>
-                                </div>
-                            </div>
-                            
-                           
-
-                        </div>
-                    </div>
-
-                    <button class="scroll-button right-button">▶</button>
-
-                </div>
-                <!--<div class="project-boxes-div">
-                    <div data-aos="fade-up" class="project-box-wrapper">
-                        <div class="project-box project-box2" id="project-box2">
-                        <div class="info-div">
-                            <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
-                            <article class="ProjectHeading">Pexelicons</article>
-                            <p class="ProjectDescription">
-                            Pexelicons: A world of personalized file folder icons to
-                            transform your PC into a reflection of your style.
-                            </p>
-                            <div class="project-buttons">
-                            <a href="https://github.com/Danyell07/Pexelicons" target="_blank" class="github-redirect"
-                                aria-label="Visit Pexelicons on GitHub">
-                                <img src="src/svg/github.svg" alt="github redirect button" />
-                            </a>
-                            <a href="https://Danyell.site/Pexelicons/" target="_blank" class="cta"
-                                aria-label="Visit Pexelicons Live">
-                                <span>Live view</span>
-                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="image-div">
-                            <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
-                        </div>
-                        </div>
-                    </div>
-        
-                    <div class="project-box-wrapper" data-aos="fade-up">
-                    <div class="project-box project-box5" id="project-box5">
-                    <div class="info-div">
-                        <img src="src/webp/cropped-1086600-192x192.webp" alt="comickaze website favicon"
-                        class="faviconforProject" />
-                        <article class="ProjectHeading">ComicKaze</article>
-                        <p class="ProjectDescription">
-                        ComicKaze is an ecommerce website built on wordpress by me
-                        as a freelancer. It specializes in selling anime
-                        merchandise.
-                        </p>
-                        <div class="project-buttons">
-                        <a href="https://comickaze.in" target="_blank" class="cta" aria-label="Visit Comickaze live">
-                            <span>Live view</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="image-div">
-                        <img src="src/webp/comickaze-preview.webp" alt="comickaze website preview image" />
-                    </div>
-                    </div>
-                    </div>
-        
-                
-                    <div class="project-box-wrapper" data-aos="fade-up">
-                    <div class="project-box project-box2" id="project-box2">
-                    <div class="info-div">
-                        <img src="src/svg/aquaregia-favicon.svg" alt="Aquaregia website favicon"
-                        class="faviconforProjectAquaregia" />
-                        <article class="ProjectHeading">Aquaregia</article>
-                        <p class="ProjectDescription">
-                        A website for University Maharaja College fest "Aquaregia"
-                        for event registrations.
-                        </p>
-                        <div class="project-buttons">
-                        <a href="https://github.com/Danyell07/Aquaregia" target="_blank" class="github-redirect"
-                            aria-label="Visit Aquaregia on GitHub">
-                            <img src="src/svg/github.svg" alt="github redirect button" />
-                        </a>
-                        <a href="https://Danyell.site/Aquaregia/" target="_blank" class="cta"
-                            aria-label="Visit Aquaregia Live">
-                            <span>Live view</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="image-div">
-                        <img src="src/webp/Aquaregia-project.webp" alt="Aquaregia website preview image" />
-                    </div>
-                    </div>
-                    </div>
-                    
-                    <div class="project-box-wrapper" data-aos="fade-up">
-                    <div class="project-box project-box4" id="project-box4">
-                    <div class="info-div">
-                        <img src="src/webp/qr-favicon.webp" alt="Qr generator website favicon" class="faviconforProject" />
-                        <article class="ProjectHeading">QR Generator</article>
-                        <p class="ProjectDescription">
-                        A webpage to make a QR Code from text using API.
-                        </p>
-                        <div class="project-buttons">
-                        <a href="https://github.com/Danyell07/QR-Generator" target="_blank" class="github-redirect"
-                            aria-label="Visit qr generator on github">
-                            <img src="src/svg/github.svg" alt="github redirect button" />
-                        </a>
-                        <a href="https://Danyell.site/QR-Generator/" target="_blank" class="cta"
-                            aria-label="Visit qr generator live">
-                            <span>Live view</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="image-div">
-                        <img src="src/webp/QRgeneratorProject.webp" alt="qr generator website preview image" />
-                    </div>
-                    </div>
-                    </div>
-        
-                    
-                    <div class="project-box-wrapper" data-aos="fade-up">
-                    <div class="project-box project-box3" id="project-box3">
-                    <div class="info-div">
-                        <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
-                        <article class="ProjectHeading">React Netflix Clone</article>
-                        <p class="ProjectDescription">
-                        A webpage to categorize the shows to redirect user to watch
-                        the show.
-                        </p>
-                        <div class="project-buttons">
-                        <a href="https://github.com/Danyell07/Netflix-clone" target="_blank" class="github-redirect"
-                            aria-label="Visit Netflix clone on GitHub">
-                            <img src="src/svg/github.svg" alt="github redirect button" />
-                        </a>
-                        <a href="https://react-project-20.netlify.app/" target="_blank" class="cta"
-                            aria-label="Visit netflix clone live">
-                            <span>Live view</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="image-div">
-                        <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
-                    </div>
-                    </div>
-                </div> -->
-            </div>
-                
-        </section>
-
     </main>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <p>Desenvolvido por Danyelle Melo.</p>
-    </footer>
     <script src="script.js" defer></script>
 </body>
 
